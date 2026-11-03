@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigel | Multimedia Computing Portfolio</title>
+    <!-- Google Fonts for Pixel & Modern Retro Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">NJ<span class="neon-dot">.</span></a>
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="hero-subtitle">&lt;System Online&gt;</p>
+
+                <!-- Animated 8-bit Dino -->
+                <div class="dino-container">
+                    <div class="pixel-dino"></div>
+                    <div class="dino-ground"></div>
+                </div>
+
+                <h1>Hi, I'm <span class="neon-text">Nigel</span></h1>
+                <p class="hero-desc">Multimedia Computing Student & Creative Developer crafting immersive digital experiences.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title"><span>01.</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am an undergraduate student specializing in <strong>Multimedia Computing and Software Development</strong>. I bridge the gap between creative visual design and logical code architecture.</p>
+                    <p>My toolkit includes core web technologies, user-interface design, interactive programming, and multimedia systems. I love turning retro aesthetic concepts into modern, responsive web apps.</p>
+                    <div class="skills-container">
+                        <span class="skill-badge">HTML5 / CSS3</span>
+                        <span class="skill-badge">JavaScript (ES6)</span>
+                        <span class="skill-badge">WordPress & Hostinger</span>
+                        <span class="skill-badge">UI/UX & Figma</span>
+                        <span class="skill-badge">IoT & Hardware Systems</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>2</h3>
+                        <p>Featured Works</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Dedicated Focus</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title"><span>02.</span> Featured Projects</h2>
+            <p class="section-subtitle-text">Explore my key deliverables, e-commerce development, and final year hardware-software systems.</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Dalen Music Store with Live Link -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="folder-icon">🎸</span>
+                        <a href="https://dalenmusicstore.shop" target="_blank" rel="noopener noreferrer" class="project-external-link">Live Site ↗</a>
+                    </div>
+                    <h3>Dalen Music Store Website</h3>
+                    <p>A fully responsive e-commerce web platform built using WordPress and hosted on Hostinger, tailored for music instruments, audio gear browsing, and seamless online retail experience.</p>
+                    <div class="project-footer">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">Hostinger</span>
+                        <span class="tag">E-Commerce</span>
+                    </div>
+                </article>
+
+                <!-- Project 2: Smart Crocodile Trap -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <span class="folder-icon">🐊</span>
+                        <span class="project-tech">IoT / Final Year Project</span>
+                    </div>
+                    <h3>Smart Crocodile Trap System</h3>
+                    <p>Politeknik Kuching Sarawak Final Year Project integrating IoT sensing frameworks, real-time alert triggers, and automated monitoring logic designed for wildlife management and safety.</p>
+                    <div class="project-footer">
+                        <span class="tag">FYP</span>
+                        <span class="tag">IoT Systems</span>
+                        <span class="tag">Claude AI Integration</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title"><span>03.</span> Contact Terminal</h2>
+            <p class="contact-desc">Have a question, project inquiry, or want to connect? Send a transmission directly through the portal.</p>
+            
+            <div class="contact-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Transmission Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Transmit Message</button>
+                    <p id="form-feedback" class="form-feedback hidden"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Nigel Bujin Jenal.</p>
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">▲ TOP</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
